@@ -47,7 +47,7 @@ def find_lookalike(image_bytes: bytes) -> dict:
             img_path=tmp_path,
             model_name="Facenet",
             enforce_detection=True,
-            detector_backend="opencv",
+            detector_backend="mtcnn",
             align=False,         
 
         )
