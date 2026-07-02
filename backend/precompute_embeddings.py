@@ -32,6 +32,8 @@ def extract_embedding(image_path: str) -> list[float] | None:
             model_name="Facenet",
             enforce_detection=False,   
             detector_backend="opencv",
+            align=False,
+
         )
         return result[0]["embedding"]
     except Exception as e:

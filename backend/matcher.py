@@ -45,6 +45,8 @@ def find_lookalike(image_bytes: bytes) -> dict:
             model_name="Facenet",
             enforce_detection=True,
             detector_backend="opencv",
+            align=False,         
+
         )
         user_embedding = result[0]["embedding"]
 
