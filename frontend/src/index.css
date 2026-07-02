@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0a0d12;
+  --surface:   #131720;
+  --surface-2: #1c2232;
+  --border:    rgba(255,255,255,0.08);
+  --green:     #00e676;
+  --green-dim: rgba(0,230,118,0.12);
+  --gold:      #ffd700;
+  --text:      #f0f2f5;
+  --muted:     #7a8499;
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius:    12px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,230,118,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,230,118,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+button { cursor: pointer; border: none; outline: none; }
+img { display: block; }
