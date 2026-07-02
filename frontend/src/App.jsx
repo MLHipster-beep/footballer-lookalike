@@ -2,7 +2,7 @@ import { useState } from 'react'
 import UploadZone from './components/UploadZone.jsx'
 import ResultCard from './components/ResultCard.jsx'
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API = import.meta.env.VITE_API_URL || 'https://footballer-lookalike.onrender.com'
 
 export default function App() {
   const [state, setState] = useState('idle') 
