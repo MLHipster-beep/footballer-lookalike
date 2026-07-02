@@ -3,10 +3,12 @@ import json
 import os
 import tempfile
 import numpy as np
+
+os.environ["DEEPFACE_HOME"] = os.path.dirname(os.path.abspath(__file__))  # must run BEFORE deepface import
+
 from deepface import DeepFace
 
 EMBEDDINGS_PATH = "data/embeddings.json"
-os.environ["DEEPFACE_HOME"] = os.path.dirname(os.path.abspath(__file__))
 
 def _load_embeddings():
     if not os.path.exists(EMBEDDINGS_PATH):
